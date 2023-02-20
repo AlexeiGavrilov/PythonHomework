@@ -7,16 +7,15 @@
 
 a = str(input("Введите номер билета: "))
 i = 0
-k = 3
 sum1 = 0
 sum2 = 0
 if len(a) == 6:
     while i < len(a)/2:
         sum1 = sum1 + int(a[i])
         i += 1
-    while k < len(a):
-        sum2 = sum2 + int(a[k])
-        k += 1  
+    while i < len(a):
+        sum2 = sum2 + int(a[i])
+        i += 1  
     if (sum1 == sum2):
         print (f"Билет {a} счастливый!")
     else:
